@@ -76,9 +76,10 @@ npm run dev
 
 Here are some inspiration for this kind of terminal website. Only some features and functionalities are inspired by these following websites. All codes are written on my own.
 
+- [@satnaing](https://satnaing.dev)
 - [term m4tt72](https://term.m4tt72.com/)
 - [Forrest](https://fkcodes.com/)
 
 ## Author
 
-- [@satnaing](https://satnaing.dev)
+- [@bhaskaaar](https://bhaskaaar.dev)

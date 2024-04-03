@@ -11,12 +11,12 @@ const About: React.FC = () => {
         Hi, my name is <HighlightSpan>Bhaskar Datta</HighlightSpan>!
       </p>
       <p>
-        I'm <HighlightAlt>a full-stack developer</HighlightAlt> based in Yangon,
-        Myanmar.
+        I'm <HighlightAlt>a full-stack developer</HighlightAlt> based in
+        Chandigarh, India.
       </p>
       <p>
-        I am passionate about writing codes and <br />
-        developing web applications to solve real-life challenges.
+        I am passionate about writing code and <br />
+        developing applications to solve real-life challenges.
       </p>
     </AboutWrapper>
   );
