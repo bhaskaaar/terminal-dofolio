@@ -30,9 +30,7 @@ const Projects: React.FC = () => {
 
   /* ===== check arg is valid ===== */
   const checkArg = () =>
-    isArgInvalid(arg, "go", ["1", "2", "3", "4"]) ? (
-      <Usage cmd="projects" />
-    ) : null;
+    isArgInvalid(arg, "go", ["1"]) ? <Usage cmd="projects" /> : null;
 
   return arg.length > 0 || arg.length > 2 ? (
     checkArg()
@@ -57,27 +55,27 @@ const projects = [
   {
     id: 1,
     title: "Bhaskar Datta's Blog",
-    desc: "My personal blog where I can write down my thoughts and experiences.",
-    url: "https://satnaing.dev/blog/",
+    desc: "My personal blog where I pen down my thoughts and experiences. Coming Soon!",
+    url: "https://bhaskaaar.dev/blog/",
   },
-  {
-    id: 2,
-    title: "Haru Fashion",
-    desc: "An ecommerce web application where users can browse various products and make purchases.",
-    url: "https://haru-fashion.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "Haru API",
-    desc: "A RESTful API developed for the Haru fashion ecommerce project.",
-    url: "https://satnaing.github.io/haru-api/",
-  },
-  {
-    id: 4,
-    title: "AstroPaper Blog Theme",
-    desc: "A minimal, accessible and SEO-friendly Astro blog theme.",
-    url: "https://astro-paper.pages.dev/",
-  },
+  // {
+  //   id: 2,
+  //   title: "billing dashboad test",
+  //   desc: "pspspspsps",
+  //   url: "https://bhaskaaar.dev/blog/",
+  // },
+  // {
+  //   id: 3,
+  //   title: "",
+  //   desc: "pspspspsps",
+  //   url: "https://bhaskaaar.dev/blog/",
+  // },
+  // {
+  //   id: 4,
+  //   title: "",
+  //   desc: "pspspspsps",
+  //   url: "https://bhaskaaar.dev/blog/",
+  // }
 ];
 
 export default Projects;

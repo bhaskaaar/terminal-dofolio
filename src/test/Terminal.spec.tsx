@@ -150,19 +150,19 @@ describe("Terminal Component", () => {
       await user.type(terminalInput, "email{enter}");
       expect(window.open).toHaveBeenCalled();
       expect(screen.getByTestId("latest-output").firstChild?.textContent).toBe(
-        "contact@satnaing.dev"
+        "bhaskardatta321@gmail.com"
       );
     });
 
-    const nums = [1, 2, 3, 4];
-    nums.forEach(num => {
+    const numsProject = [1];
+    numsProject.forEach(num => {
       it(`should redirect to project URL when user type 'projects go ${num}' cmd`, async () => {
         await user.type(terminalInput, `projects go ${num}{enter}`);
         expect(window.open).toHaveBeenCalled();
       });
     });
-
-    nums.forEach(num => {
+    const numsSocial = [1, 2, 3];
+    numsSocial.forEach(num => {
       it(`should redirect to social media when user type 'socials go ${num}' cmd`, async () => {
         await user.type(terminalInput, `socials go ${num}{enter}`);
         expect(window.open).toHaveBeenCalled();
@@ -202,8 +202,8 @@ describe("Terminal Component", () => {
         window.open = vi.fn();
 
         // firstly run commands correct options
-        await user.type(terminalInput, `projects go 4{enter}`);
-        await user.type(terminalInput, `socials go 4{enter}`);
+        await user.type(terminalInput, `projects go 1{enter}`);
+        await user.type(terminalInput, `socials go 1{enter}`);
         await user.type(terminalInput, `themes set espresso{enter}`);
 
         // then run cmd with incorrect options
@@ -220,6 +220,7 @@ describe("Terminal Component", () => {
       it(`should autocomplete '${cmd}' when 'Tab' is pressed`, async () => {
         await user.type(terminalInput, cmd.slice(0, 2));
         await user.tab();
+        // console.log(cmd);
         expect(terminalInput.value).toBe(cmd);
       });
     });

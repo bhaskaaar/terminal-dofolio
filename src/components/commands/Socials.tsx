@@ -27,9 +27,7 @@ const Socials: React.FC = () => {
 
   /* ===== check arg is valid ===== */
   const checkArg = () =>
-    isArgInvalid(arg, "go", ["1", "2", "3", "4"]) ? (
-      <Usage cmd="socials" />
-    ) : null;
+    isArgInvalid(arg, "go", ["1"]) ? <Usage cmd="socials" /> : null;
 
   return arg.length > 0 || arg.length > 2 ? (
     checkArg()
@@ -52,25 +50,19 @@ const socials = [
   {
     id: 1,
     title: "GitHub",
-    url: "https://github.com/satnaing",
+    url: "https://github.com/bhaskaaar",
     tab: 3,
   },
   {
     id: 2,
-    title: "Dev.to",
-    url: "https://dev.to/satnaing",
-    tab: 3,
-  },
-  {
-    id: 3,
-    title: "Facebook",
-    url: "https://www.facebook.com/satnaing.dev",
+    title: "LinkedIn",
+    url: "https://www.linkedin.com/in/dattabhaskar/",
     tab: 1,
   },
   {
-    id: 4,
+    id: 3,
     title: "Instagram",
-    url: "https://instagram.com/satnaing.dev",
+    url: "https://instagram.com/chappal.singh",
     tab: 0,
   },
 ];
