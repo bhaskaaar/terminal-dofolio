@@ -25,10 +25,12 @@ BBBBBB  hh   hh  aaa aa     s kk  kk  aaa aa  aaa aa  aaa aa rr
         <PreWrapper>
           <PreNameMobile>
             {`
-  ^    ^    ^    ^    ^    ^    ^    ^    ^  
-  /B   /h   /a   /s   /k   /a   /a   /a   /r  
- <___><___><___><___><___><___><___><___><___> 
- 
+#     #                  #      #    
+#     #                  #           
+###   ###    ###   ###   # #   ##    
+#  #  #  #  #  #  ##     ##     #    
+#  #  #  #  # ##    ##   # #    #    
+###   #  #   # #  ###    #  #  ###
           `}
           </PreNameMobile>
         </PreWrapper>
